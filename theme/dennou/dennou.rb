@@ -4,14 +4,14 @@
 ## font size setup
 # けっこう適当. 
 # Science なプレゼン用に default よりかなり小さめ.
-@xxx_large_font_size = screen_size(6 * Pango::SCALE)
-@xx_large_font_size = screen_size(5 * Pango::SCALE)
-@x_large_font_size = screen_size(4.5 * Pango::SCALE)
-@large_font_size = screen_size(4.0 * Pango::SCALE)
-@normal_font_size = screen_size(3.5 * Pango::SCALE)
-@small_font_size = screen_size(3.2 * Pango::SCALE)
-@x_small_font_size = screen_size(3.0 * Pango::SCALE)
-@xx_small_font_size = screen_size(2.8 * Pango::SCALE)
+@xxx_large_font_size = screen_size(5 * Pango::SCALE)
+@xx_large_font_size = screen_size(4.5 * Pango::SCALE)
+@x_large_font_size = screen_size(4 * Pango::SCALE)
+@large_font_size = screen_size(3.8 * Pango::SCALE)
+@normal_font_size = screen_size(3 * Pango::SCALE)
+@small_font_size = screen_size(2.8 * Pango::SCALE)
+@x_small_font_size = screen_size(2.5 * Pango::SCALE)
+@xx_small_font_size = screen_size(1.5 * Pango::SCALE)
 # script font size
 @script_font_size = @xx_small_font_size
 @large_script_font_size = @x_small_font_size
@@ -20,8 +20,8 @@
 ## font family setup
 # fc-list で出てくる名前を指定する.
 ##
-@default_font = "MeiryoKe_Console"
-@bold_font = "MeiryoKe_Console"
+@default_font = "VL Gothic"
+@bold_font = "IPAPGothic"
 @monospace_font = "Osaka－等幅"
 
 @font_family = find_font_family(@default_font)
@@ -91,6 +91,3 @@ match(Slide) do |slides|
     end
   end
 end
-
-# おまじない
-include_theme("windows-adjust")
