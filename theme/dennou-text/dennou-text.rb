@@ -44,43 +44,43 @@ item_list_item = [ItemList, ItemListItem]
 
 
 match(*(slide_body + (item_list_item * 1))) do
-  prop_set("foreground", @default_item1_mark_color)
+#  prop_set("foreground", @default_item1_mark_color)
 end
 
 match(*(slide_body + (item_list_item * 2))) do
   prop_set("size", @small_font_size)
-  prop_set("foreground", @default_item2_mark_color)
+#  prop_set("foreground", @default_item2_mark_color)
 end
 
 match(*(slide_body + (item_list_item * 3))) do
   prop_set("size", @x_small_font_size)
-  prop_set("foreground", @default_item3_mark_color)
+#  prop_set("foreground", @default_item3_mark_color)
 end
 
 enum_list_item = [EnumList, EnumListItem]
 
 match(*(slide_body + (enum_list_item * 1))) do
-  prop_set("foreground", @default_item1_mark_color)
+#  prop_set("foreground", @default_item1_mark_color)
 end
 
 match(*(slide_body + (enum_list_item * 2))) do
   prop_set("size", @small_font_size)
-  prop_set("foreground", @default_item2_mark_color)
+#  prop_set("foreground", @default_item2_mark_color)
 end
 
 match(*(slide_body + (enum_list_item * 3))) do
   prop_set("size", @x_small_font_size)
-  prop_set("foreground", @default_item3_mark_color)
+#  prop_set("foreground", @default_item3_mark_color)
 end
 
 match(*(slide_body + enum_list_item + item_list_item)) do
   prop_set("size", @small_font_size)
-  prop_set("foreground", @default_enum_item1_mark_color)
+#  prop_set("foreground", @default_enum_item1_mark_color)
 end
 
 match(*(slide_body + enum_list_item + (item_list_item * 2))) do
   prop_set("size", @x_small_font_size)
-  prop_set("foreground", @default_enum_item2_mark_color)
+#  prop_set("foreground", @default_enum_item2_mark_color)
 end
 
 

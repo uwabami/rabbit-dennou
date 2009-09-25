@@ -4,7 +4,7 @@
 ## font size setup
 # けっこう適当. 
 # Science なプレゼン用に default よりかなり小さめ.
-@xxx_large_font_size = screen_size(5 * Pango::SCALE)
+@xxx_large_font_size = screen_size(8 * Pango::SCALE)
 @xx_large_font_size = screen_size(4.5 * Pango::SCALE)
 @x_large_font_size = screen_size(4 * Pango::SCALE)
 @large_font_size = screen_size(3.8 * Pango::SCALE)
@@ -20,9 +20,9 @@
 ## font family setup
 # fc-list で出てくる名前を指定する.
 ##
-@default_font = "VL Gothic"
-@bold_font = "IPAPGothic"
-@monospace_font = "Osaka－等幅"
+@default_font = "MeiryoKe_UIGothic"
+@bold_font = "MeiryoKe_UIGothic"
+@monospace_font = "セプテンバーＭ-等幅"
 
 @font_family = find_font_family(@default_font)
 @monospace_font_family = find_font_family(@monospace_font)
@@ -76,8 +76,7 @@ include_theme("dennou-foot-text")
 include_theme("default-item-mark")
 include_theme("default-description")
 include_theme("dennou-preformatted")
-include_theme("default-block-quote")
-
+include_theme("dennou-block-quote")
 
 # # 高橋メソッド
 @lightning_talk_proc_name = "lightning-dennou"

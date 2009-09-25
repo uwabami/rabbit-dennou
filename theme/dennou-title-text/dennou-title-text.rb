@@ -27,18 +27,18 @@ end
 
 match(TitleSlide, Subtitle) do |titles|
   titles.prop_set("size", @title_slide_subtitle_font_size)
-  titles.margin_top = @space
+  titles.margin_top = @space * 0.1
+  titles.margin_bottom = @space * 1.5
 end
 
 match(TitleSlide, Author) do |titles|
+  titles.margin_top = @space * 3
   titles.prop_set("size", @title_slide_author_font_size)
-#  titles.margin_bottom = @space * 0.01
+  titles.margin_bottom = @space * 0.5
 end
 
 match(TitleSlide, ContentSource) do |sources|
   sources.prop_set("size", @title_slide_content_source_font_size)
-#  sources.margin_top = @space * 0.01
-  sources.margin_bottom = @space
 end
 
 match(TitleSlide, Institution) do |institutions|

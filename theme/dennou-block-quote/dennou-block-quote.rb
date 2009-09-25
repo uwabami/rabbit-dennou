@@ -91,7 +91,7 @@ match("**", BlockQuote) do
       layout = nil
       block.add_post_draw_proc(name) do |canvas, x, y, w, h, simulation|
         if layout.nil?
-          title = Text.new(_("[cited from `%s']") % block.title)
+          title = Text.new(_("%s") % block.title)
           title.font(:size => @block_quote_title_font_size,
                      :style => "italic")
           title.align = Pango::Layout::ALIGN_RIGHT

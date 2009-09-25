@@ -13,11 +13,6 @@ match(TitleSlide) do |slides|
   slides.margin_bottom = @margin_bottom
 end
 
-match(TitleSlide, Author) do |authors|
-  authors.margin_top = @space * 2
-  authors.margin_bottom = @space * 2
-end
-
 # --- grad
 loader_left = ImageLoader.new(find_file(@title_left))
 loader_right = ImageLoader.new(find_file(@title_right))
