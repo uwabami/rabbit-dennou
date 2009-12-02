@@ -1,6 +1,8 @@
 Rabbit theme, GFD-Dennou Club 
 -----------------------------
 
+* I want to refactoring. Send me patch, please! *
+
 [GFD-Dennou Club](http://www.gfd-dennou.org) theme 
 for [Rabbit](http://www.cozmixng.org/~rwiki/?cmd=viewName=Rabbit).
 
