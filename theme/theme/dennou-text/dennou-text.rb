@@ -87,12 +87,12 @@ end
 
 match("**", Subscript) do |texts|
   texts.prop_set("size", @script_font_size)
-  texts.prop_set("rise", -(@script_font_size * 2 / 3.0).to_i)
+  texts.prop_set("rise", - (@script_font_size * 5 / 3.0).to_i)
 end
 
 match("**", Superscript) do |texts|
   texts.prop_set("size", @script_font_size)
-  texts.prop_set("rise", (@script_font_size * 5 / 3.0).to_i)
+  texts.prop_set("rise",   (@script_font_size * 5 / 3.0).to_i)
 end
 
 match("**", HeadLine, "**", Subscript) do |texts|

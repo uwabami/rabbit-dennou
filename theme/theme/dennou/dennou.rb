@@ -20,9 +20,9 @@
 ## font family setup
 # fc-list で出てくる名前を指定する.
 ##
-@default_font = "MeiryoKe_UIGothic"
-@bold_font = "MeiryoKe_UIGothic"
-@monospace_font = "セプテンバーＭ-等幅"
+@default_font = "Sans"
+@bold_font = "Sans"
+@monospace_font = "Ricty"
 
 @font_family = find_font_family(@default_font)
 @monospace_font_family = find_font_family(@monospace_font)

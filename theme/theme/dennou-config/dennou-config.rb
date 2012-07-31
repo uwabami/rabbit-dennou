@@ -46,11 +46,11 @@
 @image_frame_shadow_offset = 2
 
 
-@font_family = nil
-@monospace_font_family = nil
+#@font_family = nil
+#@monospace_font_family = nil
 
-@font_family = find_font_family("Rabbit")
-@monospace_font_family = find_font_family("Rabbit Monospace")
+#@font_family = find_font_family("Rabbit")
+#@monospace_font_family = find_font_family("Rabbit Monospace")
 
 if windows?
   @font_family ||= find_font_family("MS PGothic")
@@ -59,6 +59,9 @@ elsif quartz?
   @font_family ||= find_font_family("Hiragino Kaku Gothic Pro")
   @monospace_font_family ||= find_font_family("Osaka-Mono")
 end
-
-@font_family ||= find_font_family("Sans")
-@monospace_font_family ||= find_font_family("Monospace")
+@default_font ||= "Sans"
+@font_family = find_font_family(@default_font)
+@bold_font ||= "Sans"
+@bold_font_family = find_font_family(@bold_font)
+@monospace_font ||= "Monospace"
+@monospace_font_family = find_font_family(@monospace_font)
