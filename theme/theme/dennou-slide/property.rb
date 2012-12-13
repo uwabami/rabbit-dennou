@@ -1,1 +1,0 @@
-@category = N_("Toolkit")
