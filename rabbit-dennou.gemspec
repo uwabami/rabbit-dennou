@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = "1.3.5"
   s.name = 'rabbit-dennou'
   s.version = '0.1'
-  s.date = '2012-12-13'
+  s.date = '2014-11-28'
 
   s.summary = "Rabbit theme for GFD Dennou Club"
   s.description = "Rabbit theme for GFD Dennou Club"

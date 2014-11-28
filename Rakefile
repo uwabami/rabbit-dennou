@@ -3,7 +3,7 @@ require 'rubygems'
 require 'rake'
 require 'rake/testtask'
 require 'rake/clean'
-require 'date' unless defined? Date
+require 'date'
 
 #############################################################################
 #  Helper functions
